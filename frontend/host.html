@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Host Dashboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<nav class="navbar">
+  <h1 class="logo">🎓 CampusEvents</h1>
+
+  <div class="nav-links">
+    <button onclick="logout()" class="btn">Logout</button>
+  </div>
+</nav>
+
+
+<!-- ================= MAIN ================= -->
+<section class="dashboard">
+
+  <!-- CREATE EVENT -->
+  <div class="form-container">
+    <h2>Create Event</h2>
+
+    <form id="eventForm">
+
+      <input type="text" id="title" placeholder="Event Title" required>
+
+      <input type="text" id="category" placeholder="Category (tech/sports/cultural)" required>
+
+      <textarea id="description" placeholder="Event Description" required></textarea>
+
+      <input type="date" id="date" required>
+
+      <input type="text" id="venue" placeholder="Venue" required>
+
+      <input type="number" id="seats" placeholder="Number of Seats" required>
+
+      <input type="text" id="image" placeholder="Image URL (optional)">
+
+      <button type="submit">Create Event</button>
+
+    </form>
+  </div>
+
+
+  <!-- EVENTS LIST -->
+  <div style="margin-top:40px;">
+    <h2>Your Events</h2>
+    <div id="hostEvents" class="events-container"></div>
+  </div>
+
+</section>
+
+
+<script src="../js/api.js"></script>
+<script src="../js/host.js"></script>
+
+</body>
+</html>

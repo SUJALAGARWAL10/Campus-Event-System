@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Dashboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<nav class="navbar">
+  <h1 class="logo">🎓 CampusEvents</h1>
+
+  <div class="nav-links">
+    <button onclick="logout()" class="btn">Logout</button>
+  </div>
+</nav>
+
+
+<!-- ================= MAIN ================= -->
+<section class="dashboard">
+
+  <!-- ALL EVENTS -->
+  <div>
+    <h2>All Events</h2>
+    <div id="allEvents" class="events-container"></div>
+  </div>
+
+  <!-- MY EVENTS -->
+  <div style="margin-top:40px;">
+    <h2>My Registered Events</h2>
+    <div id="myEvents" class="events-container"></div>
+  </div>
+
+</section>
+
+
+<script src="../js/api.js"></script>
+<script src="../js/student.js"></script>
+
+</body>
+</html>

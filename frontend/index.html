@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Campus Events</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="../css/style.css">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<nav class="navbar">
+  <h1 class="logo">🎓 CampusEvents</h1>
+
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="login.html" class="btn">Login</a>
+    <a href="register.html" class="btn-outline">Register</a>
+  </div>
+</nav>
+
+
+<!-- ================= HERO SECTION ================= -->
+<section class="hero">
+  <h2>Discover Amazing Campus Events</h2>
+  <p>Explore, Register & Participate in the best events happening around you</p>
+</section>
+
+
+<!-- ================= FILTER SECTION ================= -->
+<section class="filters">
+
+  <input type="text" id="searchInput" placeholder="🔍 Search events...">
+
+  <select id="categoryFilter">
+    <option value="">All Categories</option>
+    <option value="tech">Tech</option>
+    <option value="sports">Sports</option>
+    <option value="cultural">Cultural</option>
+  </select>
+
+  <select id="availabilityFilter">
+    <option value="">All</option>
+    <option value="available">Available</option>
+    <option value="full">Full</option>
+  </select>
+
+</section>
+
+
+<!-- ================= EVENTS GRID ================= -->
+<section class="events-container" id="eventsContainer">
+  <!-- Cards will be injected here via JS -->
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+<footer>
+  <p>© 2026 Campus Event System | Built with ❤️</p>
+</footer>
+
+
+<!-- ================= JS ================= -->
+<script src="../js/api.js"></script>
+<script src="../js/event.js"></script>
+
+</body>
+</html>
